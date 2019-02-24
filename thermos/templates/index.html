@@ -8,8 +8,16 @@ block content %}
     <p>Thermos is a simple social bookmarking site.</p>
   </header>
   <section>
-    <h2>Article section h2</h2>
-    <p>Lorem ipsum stuff</p>
+    <h2>Recently Added</h2>
+    {% if new_bookmarks %}
+    <ul>
+      {% for bm in new_bookmarks %}
+      <li>{{ bm.user }} added <a href="{{ bm.url }}">{{ bm.url }}</a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    No bookmarks yet.
+    {% endif %}
   </section>
   <section>
     <h2>Article section h2</h2>

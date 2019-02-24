@@ -154,7 +154,17 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.flashes ul {
+    margin: 0;
+    background: #e44d26;
+    color: #000;
+    list-style-type: none;
+    list-style: none;
+}
 
+article.flashes {
+    margin-bottom: 1em;
+}
 
 
 
